@@ -12,3 +12,8 @@
 #######################################
 
 crearTarea	KEYWORD2
+crearTareaPeriodica	KEYWORD2
+esperar	KEYWORD2
+esperarPeriodo	KEYWORD2
+iniciarPlanificador	KEYWORD2
+tarea	KEYWORD2
