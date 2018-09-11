@@ -9,7 +9,7 @@ void creaTarea( void (*task) (void*), int prio, int periodo) {
   struct task_info *ti;
 
   /* Create a structure for use by this task. */
-  ti = pvPortMalloc( sizeof( struct task_info ) );
+  ti = (struct task_info*) pvPortMalloc( sizeof( struct task_info ) );
 
   /* Set the structure members. */
   ti->awake = 0;
