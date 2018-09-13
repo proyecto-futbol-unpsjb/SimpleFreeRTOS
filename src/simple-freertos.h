@@ -17,6 +17,10 @@
  * Crea tarea
  */
 #define crearTarea(funcion, prioridad) creaTarea(funcion, prioridad, 0)
+
+/**
+ * Crea una tarea periodica
+ */
 #define crearTareaPeriodica(funcion, prioridad, periodo) creaTarea(funcion, prioridad, periodo)
 
 /**
