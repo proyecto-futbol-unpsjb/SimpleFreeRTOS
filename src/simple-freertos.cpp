@@ -4,7 +4,7 @@
 /**
  * Crea tarea
  */
-void creaTarea( void (*task) (void*), int prio, int periodo) {
+void creaTarea( void (*task) (void*), UBaseType_t prio, int periodo) {
   TaskHandle_t t;
   struct task_info *ti;
 
@@ -16,7 +16,7 @@ void creaTarea( void (*task) (void*), int prio, int periodo) {
   ti->period = periodo;
 
   /* Create the task. */
-  xTaskCreate(task,NULL, 128,  NULL,  1,  &t);
+  xTaskCreate(task, NULL, 128,  NULL,  prio,  &t);
 
   /* Set the TLS */
   vTaskSetThreadLocalStoragePointer( t, 0, ( void * ) ti );

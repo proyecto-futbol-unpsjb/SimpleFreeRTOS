@@ -22,7 +22,7 @@
 /**
  * Crea una tarea
  */
-void creaTarea( void (*task) (void*), int prio, int periodo);
+void creaTarea( void (*task) (void*), UBaseType_t prio, int periodo);
 
 /**
  * Invoca la función vTaskDelay
