@@ -1,5 +1,5 @@
 #include "Arduino_FreeRTOS.h"
-#include "simple-freertos.h"
+#include "SimpleFreeRTOS.h"
 
 /**
  * Crea tarea

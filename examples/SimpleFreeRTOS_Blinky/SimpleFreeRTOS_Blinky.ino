@@ -1,5 +1,6 @@
 #include "Arduino.h"
-#include <simple-freertos.h>
+#include <Arduino_FreeRTOS.h>
+#include <SimpleFreeRTOS.h>
 
 // prende y apaga el led
 tarea(mi_tarea)

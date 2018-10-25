@@ -1,7 +1,5 @@
-#include "Arduino_FreeRTOS.h"
-
-#ifndef simple-freertos_h
-#define simple-freertos_h
+#ifndef SimpleFreeRTOS_h
+#define SimpleFreeRTOS_h
 
 /**
  * Funcion para la tarea
