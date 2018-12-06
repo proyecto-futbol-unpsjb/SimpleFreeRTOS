@@ -9,7 +9,20 @@
 /**
  * Inicia el planificador
  */
-#define iniciarPlanificador() vTaskStartScheduler();
+#define iniciarPlanificador() vTaskStartScheduler()
+
+/**
+ * Crear semaforo
+ */
+#define creaSemaforoMutex() xSemaphoreCreateMutex()
+#define creaSemaforoBinario() xSemaphoreCreateBinary()
+#define creaSemaforoContador(max, init) xSemaphoreCreateCounting((UBaseType_t) max, (UBaseType_t) init)
+
+/**
+ * Utilizar semaforo
+ */
+#define tomarSemaforo(semaforo) xSemaphoreTake(semaforo, portMAX_DELAY)
+#define liberarSemaforo(semaforo) xSemaphoreGive(semaforo)
 
 /**
  * Crea tarea
@@ -43,5 +56,10 @@ struct task_info {
   TickType_t awake;
   TickType_t period;
 };
+
+/**
+ * Semáforo
+ */
+typedef SemaphoreHandle_t semaforo;
 
 #endif

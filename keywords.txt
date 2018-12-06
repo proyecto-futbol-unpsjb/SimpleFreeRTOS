@@ -6,6 +6,7 @@
 #######################################
 # Datatypes (KEYWORD1)
 #######################################
+semaforo	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
@@ -17,3 +18,8 @@ esperar	KEYWORD2
 esperarPeriodo	KEYWORD2
 iniciarPlanificador	KEYWORD2
 tarea	KEYWORD2
+creaSemaforoMutex	KEYWORD2
+creaSemaforoBinario	KEYWORD2
+creaSemaforoContador	KEYWORD2
+tomarSemaforo	KEYWORD2
+liberarSemaforo	KEYWORD2
