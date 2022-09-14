@@ -23,3 +23,4 @@ creaSemaforoBinario	KEYWORD2
 creaSemaforoContador	KEYWORD2
 tomarSemaforo	KEYWORD2
 liberarSemaforo	KEYWORD2
+porSiempre	KEYWORD2

@@ -2,6 +2,11 @@
 #define SimpleFreeRTOS_h
 
 /**
+ * while(true)
+ */
+#define porSiempre while(true)
+
+/**
  * Funcion para la tarea
  */
 #define tarea(nombre) void nombre(void *p)
